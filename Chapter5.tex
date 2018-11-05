@@ -44,7 +44,7 @@ Stable storage can be implemented with a pair of disks, as seen in \autoref{fig:
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot045}
+\includegraphics[width=0.7\linewidth]{figures/screenshot045}
 \caption{Stable storage using a pair of disks.}
 \label{fig:screenshot045}
 \end{figure}
@@ -103,7 +103,7 @@ If we use indices to objects, we can reduce the number of copy operations. When 
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot046}
+\includegraphics[width=0.7\linewidth]{figures/screenshot046}
 \caption{Optimising the private workspace technique using indices.}
 \label{fig:screenshot046}
 \end{figure}
@@ -111,7 +111,7 @@ If we use indices to objects, we can reduce the number of copy operations. When 
 If the transaction aborts, the private copies of the objects and indices are discarded, as shown in \autoref{fig:screenshot047}.
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot047}
+\includegraphics[width=0.7\linewidth]{figures/screenshot047}
 \caption{Aborted optimised private workspace tranction.}
 \label{fig:screenshot047}
 \end{figure}
@@ -128,7 +128,7 @@ One process functions as the coordinator. The other participating processes are 
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot048}
+\includegraphics[width=0.7\linewidth]{figures/screenshot048}
 \caption{Two-phase commit protocol.}
 \label{fig:screenshot048}
 \end{figure}
@@ -196,7 +196,7 @@ Suppose a transaction aborts after releasing some of the locks. If other transac
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot049}
+\includegraphics[width=0.7\linewidth]{figures/screenshot049}
 \caption{Cascading abort in two-phase locking.}
 \label{fig:screenshot049}
 \end{figure}

@@ -6,7 +6,7 @@ which is equivalent to
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot072}
+\includegraphics[width=0.7\linewidth]{figures/screenshot072}
 \caption{Memory system for a vector processor.}
 \label{fig:screenshot072}
 \end{figure}
@@ -17,14 +17,14 @@ A vector processor is interesting as it can be used to dramatically speed up com
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot073}
+\includegraphics[width=0.7\linewidth]{figures/screenshot073}
 \caption{Unvectorised computation.}
 \label{fig:screenshot073}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot074}
+\includegraphics[width=0.7\linewidth]{figures/screenshot074}
 \caption{Vectorised computation.}
 \label{fig:screenshot074}
 \end{figure}
@@ -33,14 +33,14 @@ This is made possible through the existence of pipelining, discussed in \autoref
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot075}
+\includegraphics[width=0.7\linewidth]{figures/screenshot075}
 \caption{Non-pipelined computation.}
 \label{fig:screenshot075}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot076}
+\includegraphics[width=0.7\linewidth]{figures/screenshot076}
 \caption{Pipelined computation.}
 \label{fig:screenshot076}
 \end{figure}
@@ -52,7 +52,7 @@ Conventional memory, seen in \autoref{fig:screenshot077}, consists of a set of s
 
 \begin{figure}
 \centering
-\includegraphics[width=0.5\linewidth]{screenshot077}
+\includegraphics[width=0.5\linewidth]{figures/screenshot077}
 \caption{Conventional memory.}
 \label{fig:screenshot077}
 \end{figure}
@@ -61,7 +61,7 @@ An interleaved memory system, seen in \autoref{fig:screenshot078}, uses a number
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot078}
+\includegraphics[width=0.7\linewidth]{figures/screenshot078}
 \caption{Interleaved memory.}
 \label{fig:screenshot078}
 \end{figure}
@@ -70,7 +70,7 @@ A pipelined machine can be kept fed with instructions even though the main memor
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot079}
+\includegraphics[width=0.7\linewidth]{figures/screenshot079}
 \caption{Pipelined adder fed by an interleaved memory system.}
 \label{fig:screenshot079}
 \end{figure}
@@ -79,14 +79,14 @@ The use of multiple banks can be seen in context in \autoref{fig:screenshot079},
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot080}
+\includegraphics[width=0.7\linewidth]{figures/screenshot080}
 \caption{Memory layout of an interleaved vector processing system.}
 \label{fig:screenshot080}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot081}
+\includegraphics[width=0.7\linewidth]{figures/screenshot081}
 \caption{Pipeline utilisation of an interleaved vector processing system.}
 \label{fig:screenshot081}
 \end{figure}
@@ -95,21 +95,21 @@ However, it is possible for memory contention to occur, as depicted in \autoref{
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot082}
+\includegraphics[width=0.7\linewidth]{figures/screenshot082}
 \caption[Memory contention.]{Memory contention; these arrays are arranged in such a way that all accesses are on the same bank, dramatically slowing down processing.}
 \label{fig:screenshot082}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot083}
+\includegraphics[width=0.7\linewidth]{figures/screenshot083}
 \caption{Adding artificial delay paths to the pipelined adder.}
 \label{fig:screenshot083}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot084}
+\includegraphics[width=0.7\linewidth]{figures/screenshot084}
 \caption[Delay path pipelining.]{Pipelining after the delay path has been added. Note that the pipelines can run concurrently as the data they require has been made available by the delay.}
 \label{fig:screenshot084}
 \end{figure}
@@ -119,7 +119,7 @@ The CRAY-1 has facilities for vector processing that work on a 64-word basis per
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot085}
+\includegraphics[width=0.7\linewidth]{figures/screenshot085}
 \caption{CRAY-1 architecture.}
 \label{fig:screenshot085}
 \end{figure}
@@ -170,7 +170,7 @@ The breakdown of $A$ can be seen in \autoref{fig:screenshot086}.
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot086}
+\includegraphics[width=0.7\linewidth]{figures/screenshot086}
 \caption{Vectorised Gaussian elimination \footnotemark breakdown.}
 \label{fig:screenshot086}
 \end{figure}
@@ -192,63 +192,63 @@ These figures were at the end of the slides.
 
 \begin{figure}
 \centering
-\includegraphics[width=0.5\linewidth]{screenshot087}
+\includegraphics[width=0.5\linewidth]{figures/screenshot087}
 \caption{The design space for floating-point precision.}
 \label{fig:screenshot087}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.5\linewidth]{screenshot088}
+\includegraphics[width=0.5\linewidth]{figures/screenshot088}
 \caption{The design space for integer precision.}
 \label{fig:screenshot088}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.5\linewidth]{screenshot089}
+\includegraphics[width=0.5\linewidth]{figures/screenshot089}
 \caption{Parallel computation of floating-point and integer results.}
 \label{fig:screenshot089}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.5\linewidth]{screenshot090}
+\includegraphics[width=0.5\linewidth]{figures/screenshot090}
 \caption{Mixed function and data parallelism.}
 \label{fig:screenshot090}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.5\linewidth]{screenshot091}
+\includegraphics[width=0.5\linewidth]{figures/screenshot091}
 \caption{The design space for parallel computational functionality.}
 \label{fig:screenshot091}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.5\linewidth]{screenshot092}
+\includegraphics[width=0.5\linewidth]{figures/screenshot092}
 \caption{Communication between CPUs and memory.}
 \label{fig:screenshot092}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.5\linewidth]{screenshot093}
+\includegraphics[width=0.5\linewidth]{figures/screenshot093}
 \caption{The overall architecture of the Convex C4/XA system.}
 \label{fig:screenshot093}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.5\linewidth]{screenshot094}
+\includegraphics[width=0.5\linewidth]{figures/screenshot094}
 \caption{The configuration of the crossbar switch.}
 \label{fig:screenshot094}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.5\linewidth]{screenshot095}
+\includegraphics[width=0.5\linewidth]{figures/screenshot095}
 \caption[The processor configuration.]{The processor configuration. (Some processor, anyway.)}
 \label{fig:screenshot095}
 \end{figure}

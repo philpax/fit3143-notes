@@ -8,7 +8,7 @@ In a superscalar machine, multiple instructions are issued concurrently (\autore
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot148}
+\includegraphics[width=0.7\linewidth]{figures/screenshot148}
 \caption{Parallel decoding in a superscalar system.}
 \label{fig:screenshot148}
 \end{figure}
@@ -17,7 +17,7 @@ The decoder is on the critical path of execution, so it must be run. However, CI
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot149}
+\includegraphics[width=0.7\linewidth]{figures/screenshot149}
 \caption{Variable instruction boundaries in a CISC system.}
 \label{fig:screenshot149}
 \end{figure}
@@ -26,7 +26,7 @@ Additionally, register dependencies need to be considered (\autoref{fig:screensh
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot150}
+\includegraphics[width=0.7\linewidth]{figures/screenshot150}
 \caption{Register dependencies.}
 \label{fig:screenshot150}
 \end{figure}
@@ -39,7 +39,7 @@ For a CISC system, the instruction boundaries and location of opcodes and operan
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot151}
+\includegraphics[width=0.7\linewidth]{figures/screenshot151}
 \caption{Pre-decode unit adding bits.}
 \label{fig:screenshot151}
 \end{figure}
@@ -63,7 +63,7 @@ In this case, instructions 3, 4 and 5 are \textit{shelved} until their dependenc
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot152}
+\includegraphics[width=0.7\linewidth]{figures/screenshot152}
 \caption{Reducing latency with shelving.}
 \label{fig:screenshot152}
 \end{figure}
@@ -74,7 +74,7 @@ When instructions are loaded from the instruction buffer in memory, they go thro
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot153}
+\includegraphics[width=0.7\linewidth]{figures/screenshot153}
 \caption{Reservation stations for efficient instruction issue.}
 \label{fig:screenshot153}
 \end{figure}
@@ -84,7 +84,7 @@ The Cray-1 was an early superscalar machine with different address and scalar fu
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot154}
+\includegraphics[width=0.7\linewidth]{figures/screenshot154}
 \caption{Cray-1 architecture.}
 \label{fig:screenshot154}
 \end{figure}
@@ -135,7 +135,7 @@ Thornton's algorithm will result in more blocks and reduced performance in compa
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot155}
+\includegraphics[width=0.7\linewidth]{figures/screenshot155}
 \caption{Tomasulo algorithm vs Thornton algorithm.}
 \label{fig:screenshot155}
 \end{figure}
@@ -147,7 +147,7 @@ The PowerPC renaming scheme uses a separate register rename file, and associativ
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot156}
+\includegraphics[width=0.7\linewidth]{figures/screenshot156}
 \caption{Indexed vs associative register file.}
 \label{fig:screenshot156}
 \end{figure}
@@ -165,7 +165,7 @@ To resolve the problem dynamically, the hardware must keep track of outstanding 
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot157}
+\includegraphics[width=0.7\linewidth]{figures/screenshot157}
 \caption[Memory dependence checking.]{Memory dependence checking with an associative queue. $W,100,10$ refers to writing $10$ to the memory location $100$.}
 \label{fig:screenshot157}
 \end{figure}
@@ -184,7 +184,7 @@ If precise interrupts are required, a reorder buffer can be used to enforce in-o
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot158}
+\includegraphics[width=0.7\linewidth]{figures/screenshot158}
 \caption[In-order completion.]{In-order completion; out-of-order execution is purposely stalled to ensure that instructions complete in order.}
 \label{fig:screenshot158}
 \end{figure}
@@ -193,7 +193,7 @@ The reorder buffer is implemented using a circular buffer with head and tail poi
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot159}
+\includegraphics[width=0.7\linewidth]{figures/screenshot159}
 \caption{Reorder buffer implementation.}
 \label{fig:screenshot159}
 \end{figure}

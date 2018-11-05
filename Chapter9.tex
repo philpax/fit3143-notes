@@ -15,7 +15,7 @@ None of these instructions have dependencies on each other; that is, they are al
 \section{Pipelining}
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot065}
+\includegraphics[width=0.7\linewidth]{figures/screenshot065}
 \caption{Pipelining: splitting one operation into multiple stages.}
 \label{fig:screenshot065}
 \end{figure}
@@ -26,7 +26,7 @@ This allows multiple instructions to be run simultaneously if each instruction i
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot066}
+\includegraphics[width=0.7\linewidth]{figures/screenshot066}
 \caption{Multiple instructions through pipelining.}
 \label{fig:screenshot066}
 \end{figure}
@@ -36,14 +36,14 @@ Very Long Instruction Word (VLIW) and Superscalar approaches are largely similar
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot067}
+\includegraphics[width=0.7\linewidth]{figures/screenshot067}
 \caption[VLIW approach.]{VLIW approach. Note how the four execution units are fed with the four segments of the one instruction word - you might even say the instruction word is \textit{very long}. The compiler decides which instructions form the instruction word at compile-time.}
 \label{fig:screenshot067}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot068}
+\includegraphics[width=0.7\linewidth]{figures/screenshot068}
 \caption[Superscalar approach.]{Superscalar approach. There are four individual instructions that are concurrently fed to the execution units; the hardware is responsible for determining \textit{what} these four instructions are based on the instruction stream at runtime.}
 \label{fig:screenshot068}
 \end{figure}
@@ -79,7 +79,7 @@ There are three primary methods of instruction scheduling, briefly discussed pri
 \subsection{Static}
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot069}
+\includegraphics[width=0.7\linewidth]{figures/screenshot069}
 \caption{Static scheduling.}
 \label{fig:screenshot069}
 \end{figure}
@@ -89,7 +89,7 @@ In static scheduling (depicted in \autoref{fig:screenshot069}), the compiler is 
 \subsection{Dynamic}
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot070}
+\includegraphics[width=0.7\linewidth]{figures/screenshot070}
 \caption{Dynamic scheduling.}
 \label{fig:screenshot070}
 \end{figure}
@@ -121,7 +121,7 @@ All three of these factors must be considered when the maximum speedup is evalua
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot071}
+\includegraphics[width=0.7\linewidth]{figures/screenshot071}
 \caption{Effects of register renaming on performance.}
 \label{fig:screenshot071}
 \end{figure}

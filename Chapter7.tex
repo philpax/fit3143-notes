@@ -2,7 +2,7 @@
 Parallel computing is a form of computation in which many instructions are carried out simultaneously (see \autoref{fig:screenshot051}). It operates on the principle that large problems can often be divided into smaller ones, which are then solved concurrently. There are several different forms of parallel computing: bit-level parallelism, instruction-level parallelism, data parallelism, and task parallelism. 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot051}
+\includegraphics[width=0.7\linewidth]{figures/screenshot051}
 \caption{Serial computing vs parallel computing.}
 \label{fig:screenshot051}
 \end{figure}
@@ -56,7 +56,7 @@ into this category. Execution can be synchronous or asynchronous, and determinis
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot052}
+\includegraphics[width=0.7\linewidth]{figures/screenshot052}
 \caption{Flynn's classifications.}
 \label{fig:screenshot052}
 \end{figure}
@@ -68,7 +68,7 @@ Memory architectures for a parallel computer are divided into three major catego
 \subsection{Shared Memory}
 \begin{figure}
 \centering
-\includegraphics[width=0.5\linewidth]{screenshot053}
+\includegraphics[width=0.5\linewidth]{figures/screenshot053}
 \caption{Shared memory architecture.}
 \label{fig:screenshot053}
 \end{figure}
@@ -78,7 +78,7 @@ Shared memory parallel computers vary widely, but generally have in common the a
 \subsection{Distributed Memory}
 \begin{figure}
 \centering
-\includegraphics[width=0.5\linewidth]{screenshot054}
+\includegraphics[width=0.5\linewidth]{figures/screenshot054}
 \caption{Distributed memory architecture.}
 \label{fig:screenshot054}
 \end{figure}
@@ -93,7 +93,7 @@ The network "fabric" used for data transfer varies widely, though it can be as s
 \label{ssec:hybrid}
 \begin{figure}
 \centering
-\includegraphics[width=0.5\linewidth]{screenshot055}
+\includegraphics[width=0.5\linewidth]{figures/screenshot055}
 \caption{Hybrid memory.}
 \label{fig:screenshot055}
 \end{figure}
@@ -128,7 +128,7 @@ Put simply:
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot056}
+\includegraphics[width=0.7\linewidth]{figures/screenshot056}
 \caption{The effect of varying values in the speed-up formula.}
 \label{fig:screenshot056}
 \end{figure}
@@ -142,7 +142,7 @@ where $S$ is the speedup of the program (as a factor of its original sequential 
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot057}
+\includegraphics[width=0.7\linewidth]{figures/screenshot057}
 \caption{Consequences of Amdahl's law.}
 \label{fig:screenshot057}
 \end{figure}
@@ -182,7 +182,7 @@ This example demonstrates calculations on 2-dimensional array elements, with the
 
 \begin{figure}
 \centering
-\includegraphics[width=0.3\linewidth]{screenshot058}
+\includegraphics[width=0.3\linewidth]{figures/screenshot058}
 \caption{Embarrassingly-parallel 2D grid parallel programming problem.}
 \label{fig:screenshot058}
 \end{figure}
@@ -204,7 +204,7 @@ The serial program calculates one element at a time in sequential order. Pseudoc
 For the parallel solution, array elements are distributed so that each processor owns a portion of the array (subarray); see \autoref{fig:screenshot059}. Independent calculation of array elements ensures there is no need for communication between tasks.  Distribution scheme is chosen by other criteria, e.g. unit stride (stride of 1) through the subarrays. Unit stride maximizes cache/memory usage.
 \begin{figure}
 \centering
-\includegraphics[width=0.4\linewidth]{screenshot059}
+\includegraphics[width=0.4\linewidth]{figures/screenshot059}
 \caption{Partitioning of the 2D grid problem for each task.}
 \label{fig:screenshot059}
 \end{figure}
@@ -250,7 +250,7 @@ Pseudocode for each node is shown in \autoref{alg:2dparallel2}.
 \subsubsection{Pi calculation}
 \begin{figure}
 \centering
-\includegraphics[width=0.4\linewidth]{screenshot060}
+\includegraphics[width=0.4\linewidth]{figures/screenshot060}
 \caption{Calculating $\pi$ through Monte Carlo sampling of a circle inside a square.}
 \label{fig:screenshot060}
 \end{figure}
@@ -307,7 +307,7 @@ The parallel solution for this problem modifies the serial pseudocode by breakin
 \subsubsection{1-D Wave Equation}
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot061}
+\includegraphics[width=0.7\linewidth]{figures/screenshot061}
 \caption{Parallel 1-D wave equation.}
 \label{fig:screenshot061}
 \end{figure}
@@ -321,7 +321,7 @@ where $c$ is a constant.
 \begin{algorithm}[h]
 \caption{Parallel algorithm for computing the 1-D wave equation. \footnotemark}
 \label{alg:screenshot062}
-\includegraphics[width=\linewidth]{screenshot062}
+\includegraphics[width=\linewidth]{figures/screenshot062}
 \end{algorithm}
 \footnotetext{I didn't want to transcribe this to pseudocode properly. Sorry!}
 

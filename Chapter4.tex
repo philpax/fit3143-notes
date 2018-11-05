@@ -58,7 +58,7 @@ To avoid clocks moving backwards for any machine, a clock adjustment must be int
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot028}
+\includegraphics[width=0.7\linewidth]{figures/screenshot028}
 \caption{Cristian's algorithm for clock synchronisation.}
 \label{fig:screenshot028}
 \end{figure}
@@ -80,7 +80,7 @@ Roberts algorithm).
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot029}
+\includegraphics[width=0.7\linewidth]{figures/screenshot029}
 \caption{The Berkeley algorithm for clock synchronisation.}
 \label{fig:screenshot029}
 \end{figure}
@@ -98,7 +98,7 @@ The \textit{averaging algorithm} is a decentralized algorithm. It divides time i
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot030}
+\includegraphics[width=0.7\linewidth]{figures/screenshot030}
 \caption{An example of the averaging algorithm for clock synchronisation.}
 \label{fig:screenshot030}
 \end{figure}
@@ -125,7 +125,7 @@ The cause of this behaviour is that clocks advance independently or from message
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot031}
+\includegraphics[width=0.7\linewidth]{figures/screenshot031}
 \caption{Illustration of the shortcoming with Lamport clocks.}
 \label{fig:screenshot031}
 \end{figure}
@@ -158,7 +158,7 @@ This addresses the shortcoming of the Lamport clock as it can be used to establi
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot032}
+\includegraphics[width=0.7\linewidth]{figures/screenshot032}
 \caption{Vector clock compared to a Lamport clock.}
 \label{fig:screenshot032}
 \end{figure}
@@ -181,7 +181,7 @@ When the process exits the critical section, the process sends a message to the 
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot033}
+\includegraphics[width=0.7\linewidth]{figures/screenshot033}
 \caption{Centralised exclusion algorithm.}
 \label{fig:screenshot033}
 \end{figure}
@@ -215,7 +215,7 @@ When a process exits from a critical section, it returns OK messages to all requ
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot034}
+\includegraphics[width=0.7\linewidth]{figures/screenshot034}
 \caption{Distributed critical section algorithm.}
 \label{fig:screenshot034}
 \end{figure}
@@ -233,7 +233,7 @@ The token is passed to the process with the next sequence number. A process can 
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot035}
+\includegraphics[width=0.7\linewidth]{figures/screenshot035}
 \caption{Token ring exclusion algorithm.}
 \label{fig:screenshot035}
 \end{figure}
@@ -254,7 +254,7 @@ In the group mutual exclusion problem, which generalizes mutual exclusion, proce
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot036}
+\includegraphics[width=0.7\linewidth]{figures/screenshot036}
 \caption{Group mutual exclusion problem.}
 \label{fig:screenshot036}
 \end{figure}
@@ -291,7 +291,7 @@ A system with potential deadlocks can be modelled using a directed graph called 
 
 \begin{figure}
 \centering
-\includegraphics[width=0.6\linewidth]{screenshot037}
+\includegraphics[width=0.6\linewidth]{figures/screenshot037}
 \caption{Resource allocation graph.}
 \label{fig:screenshot037}
 \end{figure}
@@ -300,7 +300,7 @@ A \textit{cycle} in the resource allocation graph, assuming that there is only o
 
 \begin{figure}
 \centering
-\includegraphics[width=0.6\linewidth]{screenshot038}
+\includegraphics[width=0.6\linewidth]{figures/screenshot038}
 \caption{A cycle in the resource allocation graph.}
 \label{fig:screenshot038}
 \end{figure}
@@ -309,7 +309,7 @@ If there are multiple copies of some resources, then a \textit{knot} is required
 
 \begin{figure}
 \centering
-\includegraphics[width=0.6\linewidth]{screenshot039}
+\includegraphics[width=0.6\linewidth]{figures/screenshot039}
 \caption{Deadlocks through cycles and knots.}
 \label{fig:screenshot039}
 \end{figure}
@@ -318,7 +318,7 @@ When there is only a single unit of each type of resource in the resource alloca
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot040}
+\includegraphics[width=0.7\linewidth]{figures/screenshot040}
 \caption{Resource allocation graph converted to wait-for graph.}
 \label{fig:screenshot040}
 \end{figure}
@@ -329,7 +329,7 @@ Ignore the deadlock problem, bury your head in the sand, and pretend that everyt
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot041}
+\includegraphics[width=0.7\linewidth]{figures/screenshot041}
 \caption{An ostrich.}
 \label{fig:screenshot041}
 \end{figure}
@@ -344,7 +344,7 @@ The aim of the algorithm is to imitate the non-distributed algorithm through a c
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot042}
+\includegraphics[width=0.7\linewidth]{figures/screenshot042}
 \caption{Diagram of the centralised deadlock algorithm.}
 \label{fig:screenshot042}
 \end{figure}
@@ -353,7 +353,7 @@ However, this algorithm is susceptible to \textit{false deadlock}. Examine \auto
 
 \begin{figure}
 \centering
-\includegraphics[width=0.4\linewidth]{screenshot043}
+\includegraphics[width=0.4\linewidth]{figures/screenshot043}
 \caption{False deadlock in the centralised deadlock detection algorithm.}
 \label{fig:screenshot043}
 \end{figure}
@@ -371,7 +371,7 @@ If a message goes all the way around and comes back to the original sender, a cy
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.5\linewidth]{screenshot044}
+\includegraphics[width=0.5\linewidth]{figures/screenshot044}
 \caption{Chandy-Misra-Haas algorithm diagram.}
 \label{fig:screenshot044}
 \end{figure}

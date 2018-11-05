@@ -5,7 +5,7 @@ The design space revolves around reducing the time and frequency of thread switc
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot117}
+\includegraphics[width=0.7\linewidth]{figures/screenshot117}
 \caption{Complete design space for a distributed memory MIMD system.}
 \label{fig:screenshot117}
 \end{figure}
@@ -40,28 +40,28 @@ A multiprocessor can be classified with regards to the following criteria: \begi
 
 \begin{figure}
 \centering
-\includegraphics[width=0.5\linewidth]{screenshot118}
+\includegraphics[width=0.5\linewidth]{figures/screenshot118}
 \caption{Node organisation: first generation.}
 \label{fig:screenshot118}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.5\linewidth]{screenshot119}
+\includegraphics[width=0.5\linewidth]{figures/screenshot119}
 \caption{Node organisation: second generation variant 1.}
 \label{fig:screenshot119}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.5\linewidth]{screenshot120}
+\includegraphics[width=0.5\linewidth]{figures/screenshot120}
 \caption{Node organisation: second generation variant 2.}
 \label{fig:screenshot120}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.5\linewidth]{screenshot121}
+\includegraphics[width=0.5\linewidth]{figures/screenshot121}
 \caption{Node organisation: third generation.}
 \label{fig:screenshot121}
 \end{figure}
@@ -78,7 +78,7 @@ The design of the interconnection network is critical to the performance of MIMD
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot122}
+\includegraphics[width=0.7\linewidth]{figures/screenshot122}
 \caption{Interconnection topologies.}
 \label{fig:screenshot122}
 \end{figure}
@@ -87,21 +87,21 @@ The possible topologies are shown in a hierarchy in \autoref{fig:screenshot122}.
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot123}
+\includegraphics[width=0.7\linewidth]{figures/screenshot123}
 \caption{Complete, Star, Linear and Ring network arrangements.}
 \label{fig:screenshot123}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot124}
+\includegraphics[width=0.7\linewidth]{figures/screenshot124}
 \caption{Mesh and Torus network arrangements.}
 \label{fig:screenshot124}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot125}
+\includegraphics[width=0.7\linewidth]{figures/screenshot125}
 \caption{Tree arrangements.}
 \label{fig:screenshot125}
 \end{figure}
@@ -110,7 +110,7 @@ The possible topologies are shown in a hierarchy in \autoref{fig:screenshot122}.
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot126}
+\includegraphics[width=0.7\linewidth]{figures/screenshot126}
 \caption{HyperCube network arrangement.}
 \label{fig:screenshot126}
 \end{figure}
@@ -121,7 +121,7 @@ The MultiStage arrangement is a hybrid of the \textit{cross-bar} arrangement and
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot127}
+\includegraphics[width=0.7\linewidth]{figures/screenshot127}
 \caption{MultiStage network arrangement (shuffle exchange).}
 \label{fig:screenshot127}
 \end{figure}
@@ -165,14 +165,14 @@ and is shown in graph form in \autoref{fig:screenshot131}.
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot128}
+\includegraphics[width=0.7\linewidth]{figures/screenshot128}
 \caption{Packet switching.}
 \label{fig:screenshot128}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot131}
+\includegraphics[width=0.7\linewidth]{figures/screenshot131}
 \caption{Network latency in packet switching.}
 \label{fig:screenshot131}
 \end{figure}
@@ -190,7 +190,7 @@ and is shown in graph form in \autoref{fig:screenshot132}.
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot132}
+\includegraphics[width=0.7\linewidth]{figures/screenshot132}
 \caption{Network latency in circuit switching.}
 \label{fig:screenshot132}
 \end{figure}
@@ -207,14 +207,14 @@ and is shown in graph form in \autoref{fig:screenshot133}.
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot129}
+\includegraphics[width=0.7\linewidth]{figures/screenshot129}
 \caption{Virtual cut-through.}
 \label{fig:screenshot129}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot133}
+\includegraphics[width=0.7\linewidth]{figures/screenshot133}
 \caption{Network latency in virtual cut-through/wormhole routing.}
 \label{fig:screenshot133}
 \end{figure}
@@ -226,7 +226,7 @@ Wormhole routing is a special-case of virtual cut-through where the buffer size 
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot130}
+\includegraphics[width=0.7\linewidth]{figures/screenshot130}
 \caption{Wormhole routing.}
 \label{fig:screenshot130}
 \end{figure}
@@ -238,7 +238,7 @@ Virtual channels allow multiple independent messages to share the same physical 
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot134}
+\includegraphics[width=0.7\linewidth]{figures/screenshot134}
 \caption{Virtual channels in routing.}
 \label{fig:screenshot134}
 \end{figure}
@@ -248,14 +248,14 @@ Virtual channels allow for increased network throughput by reducing the idle tim
 A comparison between routing without virtual channels and routing with virtual channels is seen in \autoref{fig:screenshot135} and \autoref{fig:screenshot136} respectively.
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot135}
+\includegraphics[width=0.7\linewidth]{figures/screenshot135}
 \caption{Routing without virtual channels.}
 \label{fig:screenshot135}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot136}
+\includegraphics[width=0.7\linewidth]{figures/screenshot136}
 \caption{Routes with virtual channels.}
 \label{fig:screenshot136}
 \end{figure}
@@ -265,7 +265,7 @@ Deadlocks can occur in scenarios like \autoref{fig:screenshot137}, where each no
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot137}
+\includegraphics[width=0.7\linewidth]{figures/screenshot137}
 \caption{Typical deadlock scenario.}
 \label{fig:screenshot137}
 \end{figure}
@@ -284,7 +284,7 @@ Routing protocols can be put in a hierarchy, as depicted in \autoref{fig:screens
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot138}
+\includegraphics[width=0.7\linewidth]{figures/screenshot138}
 \caption{Routing protocol hierarchy.}
 \label{fig:screenshot138}
 \end{figure}
@@ -297,7 +297,7 @@ In street sign routing, the message header contains the complete path informatio
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot139}
+\includegraphics[width=0.7\linewidth]{figures/screenshot139}
 \caption{Street sign routing.}
 \label{fig:screenshot139}
 \end{figure}
@@ -307,7 +307,7 @@ In dimension-ordered routing, the message travels along a certain dimension unti
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot140}
+\includegraphics[width=0.7\linewidth]{figures/screenshot140}
 \caption{Dimension-ordered routing.}
 \label{fig:screenshot140}
 \end{figure}
@@ -320,7 +320,7 @@ Adaptive routing protocols can be put in a hierarchy, as depicted in \autoref{fi
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot141}
+\includegraphics[width=0.7\linewidth]{figures/screenshot141}
 \caption{Adaptive routing protocols.}
 \label{fig:screenshot141}
 \end{figure}
@@ -356,7 +356,7 @@ Fine-grain concurrent processing reduces overhead and latency of receiving a mes
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot142}
+\includegraphics[width=0.7\linewidth]{figures/screenshot142}
 \caption{J-Machine processor architecture.}
 \label{fig:screenshot142}
 \end{figure}
@@ -366,7 +366,7 @@ Message passing is synchronous; neither the sender or receiver can continue with
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot143}
+\includegraphics[width=0.7\linewidth]{figures/screenshot143}
 \caption{Medium-grain Transputer architecture.}
 \label{fig:screenshot143}
 \end{figure}
@@ -375,7 +375,7 @@ Running processes need to be statically mapped onto hardware; this includes link
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot144}
+\includegraphics[width=0.7\linewidth]{figures/screenshot144}
 \caption{A single Transputer process allocation diagram.}
 \label{fig:screenshot144}
 \end{figure}
@@ -384,7 +384,7 @@ However, if more than one Transputer is used, it may not be possible to provide 
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot145}
+\includegraphics[width=0.7\linewidth]{figures/screenshot145}
 \caption{Too many physical links for a multi-Transputer arrangement.}
 \label{fig:screenshot145}
 \end{figure}
@@ -393,7 +393,7 @@ Transputers are traditionally connected using links to form a mesh; this mesh is
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot146}
+\includegraphics[width=0.7\linewidth]{figures/screenshot146}
 \caption{Transputer mesh.}
 \label{fig:screenshot146}
 \end{figure}
@@ -403,7 +403,7 @@ Finally, the design space for coarse-grain third-generation multicomputers is re
 
 \begin{figure}
 \centering
-\includegraphics[width=\linewidth]{screenshot147}
+\includegraphics[width=\linewidth]{figures/screenshot147}
 \caption{Design-space of third-generation coarse-grain multicomputers.}
 \label{fig:screenshot147}
 \end{figure}

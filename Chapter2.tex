@@ -8,7 +8,7 @@ Processes in a distributed system require the ability to communicate with each o
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot009}
+\includegraphics[width=0.7\linewidth]{figures/screenshot009}
 \caption{Comparison of approaches to IPC}
 \label{fig:screenshot009}
 \end{figure}
@@ -75,7 +75,7 @@ When both sending and receiving of a communication between processes is blocking
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.4\linewidth]{screenshot010}
+\includegraphics[width=0.4\linewidth]{figures/screenshot010}
 \caption{Synchronous workflow for send/receive}
 \label{fig:screenshot010}
 \end{figure}
@@ -96,7 +96,7 @@ A synchronous system uses no buffer for sending, and a single buffer for receivi
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.9\linewidth]{screenshot011}
+\includegraphics[width=0.9\linewidth]{figures/screenshot011}
 \caption{Buffering in a synchronous system versus an asynchronous system}
 \label{fig:screenshot011}
 \end{figure}
@@ -113,7 +113,7 @@ A potential algorithm for re-assembly of a multi-datagram message is shown in \a
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.4\linewidth]{screenshot012}
+\includegraphics[width=0.4\linewidth]{figures/screenshot012}
 \caption{Bitmap algorithm for multi-datagram message reconstruction}
 \label{fig:screenshot012}
 \end{figure}
@@ -129,7 +129,7 @@ There are three kinds of failure that can potentially occur in a message-passing
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.6\linewidth]{screenshot013}
+\includegraphics[width=0.6\linewidth]{figures/screenshot013}
 \caption{Potential failures in a message-passing system.}
 \label{fig:screenshot013}
 \end{figure}
@@ -142,11 +142,11 @@ The following diagrams illustrate "reliable" IPC protocols to accommodate failur
 \hline 
 4 & 3 & 2 \\ 
 \hline 
-\includegraphics[width=0.3\linewidth, trim=0 0 0 -5]{screenshot014}
+\includegraphics[width=0.3\linewidth, trim=0 0 0 -5]{figures/screenshot014}
  & 
-\includegraphics[width=0.3\linewidth, trim=0 0 0 -5]{screenshot015}
+\includegraphics[width=0.3\linewidth, trim=0 0 0 -5]{figures/screenshot015}
  & 
-\includegraphics[width=0.3\linewidth, trim=0 0 0 -5]{screenshot016}
+\includegraphics[width=0.3\linewidth, trim=0 0 0 -5]{figures/screenshot016}
   \\ 
 \hline 
 \end{tabular} 
@@ -155,7 +155,7 @@ An example of a fault-tolerant system is shown in \autoref{fig:screenshot017}. N
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.4\linewidth]{screenshot017}
+\includegraphics[width=0.4\linewidth]{figures/screenshot017}
 \caption{An example of a fault-tolerant system.}
 \label{fig:screenshot017}
 \end{figure}
@@ -191,7 +191,7 @@ An idempotent function will return the same result given the same input, even wh
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.55\linewidth]{screenshot018}
+\includegraphics[width=0.55\linewidth]{figures/screenshot018}
 \caption{Non-idempotent function in a distributed system.}
 \label{fig:screenshot018}
 \end{figure}
@@ -202,7 +202,7 @@ When a request is handled by a receiver, the response is stored in the reply cac
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot019}
+\includegraphics[width=0.7\linewidth]{figures/screenshot019}
 \caption[Non-idempotent to idempotent using reply cache]{Conversion of a non-idempotent operation to an idempotent operation using a reply cache.}
 \label{fig:screenshot019}
 \end{figure}
@@ -231,7 +231,7 @@ All messages are delivered to all receiver processes in the exact order in which
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot020}
+\includegraphics[width=0.7\linewidth]{figures/screenshot020}
 \caption{Absolute ordering of many-to-many messages.}
 \label{fig:screenshot020}
 \end{figure}
@@ -248,7 +248,7 @@ However, it is subject to a single point of failure and thus has poor reliabilit
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot021}
+\includegraphics[width=0.7\linewidth]{figures/screenshot021}
 \caption{Consistent ordering of many-to-many messages.}
 \label{fig:screenshot021}
 \end{figure}
@@ -271,7 +271,7 @@ IPC in a distributed system is well-handled by a message-passing system, but any
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot022}
+\includegraphics[width=0.7\linewidth]{figures/screenshot022}
 \caption{Local procedure calls vs remote procedure calls}
 \label{fig:screenshot022}
 \end{figure}
@@ -288,7 +288,7 @@ Remote procedure calls are similar to local procedure calls (which invoke a proc
 The average RPC flow can be seen in \autoref{fig:screenshot023}.
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot023}
+\includegraphics[width=0.7\linewidth]{figures/screenshot023}
 \caption{A flow for the RPC model.}
 \label{fig:screenshot023}
 \end{figure}
@@ -297,7 +297,7 @@ To achieve semantic transparency (see \autoref{sssec:transparency}), RPC impleme
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot024}
+\includegraphics[width=0.7\linewidth]{figures/screenshot024}
 \caption{RPC in detail.}
 \label{fig:screenshot024}
 \end{figure}
@@ -308,7 +308,7 @@ There are generally two types of RPC messages: call messages and reply messages.
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot025}
+\includegraphics[width=0.7\linewidth]{figures/screenshot025}
 \caption{RPC Call vs RPC Reply.}
 \label{fig:screenshot025}
 \end{figure}
@@ -330,7 +330,7 @@ As parameters may have different encodings on different machines, it is importan
 There are multiple variations on RPCs. These are: \begin{itemize}
 \item \textbf{Asynchronous RPC}: Typically, a RPC is synchronous; the calling code will wait for the call to finish executing on the remote machine. As this can lead to unnecessarily waiting, the remote machine can instead inform the calling code that it has accepted the request immediately. This dramatically reduces the amount of time spent waiting, as seen in \autoref{fig:screenshot026}. \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot026}
+\includegraphics[width=0.7\linewidth]{figures/screenshot026}
 \caption{Asynchronous RPC.}
 \label{fig:screenshot026}
 \end{figure}

@@ -154,9 +154,7 @@ Should only be used if the programmer is certain that the matching receive has a
 \hline
 Non-blocking sends &  \texttt{MPI\_Isend(buf, count, datatype, dest, tag, comm, request)} 
 
-Identifies an area in memory to serve as a send buffer. Processing continues immediately without 
-waiting  for  the  message  to  be  copied  out  from  the  application  buffer.  A communication  request 
-handle  is  returned  for  handling  the  pending  message  status.  The  program  should  not  modify  the application  buffer  until  subsequent  calls  to  \texttt{MPI\_Wait}  or  \texttt{MPI\_Test}  indicate  that  the  non-blocking send has completed.   \\
+Identifies an area in memory to serve as a send buffer. Processing continues immediately without waiting  for  the  message  to  be  copied  out  from  the  application  buffer.  A communication  request handle  is  returned  for  handling  the  pending  message  status.  The  program  should  not  modify  the application  buffer  until  subsequent  calls  to  \texttt{MPI\_Wait}  or  \texttt{MPI\_Test}  indicate  that  the  non-blocking send has completed.   \\
 \hline
 Non-blocking synchronous sends &  \texttt{MPI\_Issend(buf, count, datatype, dest, tag, comm, request)} 
 
@@ -406,7 +404,7 @@ A communicator encompasses a group of processes that may communicate with each o
 
 \begin{figure}
 \centering
-\includegraphics[width=0.7\linewidth]{screenshot027}
+\includegraphics[width=0.7\linewidth]{figures/screenshot027}
 \caption{A diagram of groups and communicators.}
 \label{fig:screenshot027}
 \end{figure}
