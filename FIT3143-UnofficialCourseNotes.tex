@@ -1,0 +1,97 @@
+\documentclass[a4paper]{report}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{geometry}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
+\usepackage{pifont}
+\usepackage[stable]{footmisc}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{textcomp}
+\usepackage{makecell}
+
+% Apply some settings to thead.
+\renewcommand\theadalign{bc}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+
+% Change our heading style to work well with long chapter titles.
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{#1}}{}}
+
+% Add numbering for subsubsections.
+\setcounter{secnumdepth}{3}
+
+% Add an autoref name for algorithms.
+\newcommand{\algorithmautorefname}{Algorithm}
+
+% Define checkmarks and crosses.
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{55}}
+
+% Set up syntax highlighting.
+\definecolor{listinggray}{gray}{0.9}
+\lstset{
+	tabsize=4,
+	rulecolor=,
+	language=c,
+        basicstyle=\ttfamily,
+        upquote=true,
+        aboveskip={\baselineskip},
+        columns=fixed,
+        showstringspaces=false,
+        extendedchars=true,
+        breaklines=true,
+        prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+        frame=single,
+        showtabs=false,
+        showspaces=false,
+        showstringspaces=false,
+        identifierstyle=\ttfamily,
+        keywordstyle=\color[rgb]{0,0,1},
+        commentstyle=\color[rgb]{0.133,0.545,0.133},
+        stringstyle=\color[rgb]{0.627,0.126,0.941},
+}
+
+% Increase spacing between numbers and titles in table of figures.
+\makeatletter
+     \renewcommand*\l@figure{\@dottedtocline{1}{1em}{3.2em}}
+\makeatother
+
+% Title Page
+\title{FIT3143: The \textit{Unofficial} Course Notes}
+\author{Mithun Hunsur}
+
+\begin{document}
+\maketitle\makeatletter
+     \renewcommand*\l@figure{\@dottedtocline{1}{1em}{3.2em}}
+\makeatother
+
+\renewcommand{\thepage}{\roman{page}}
+\setcounter{page}{1}
+	\tableofcontents
+	\listoffigures
+	\listoftables
+	\listofalgorithms
+
+\renewcommand{\thepage}{\arabic{page}}
+\setcounter{page}{1}
+	\include{Chapter1}
+	\include{Chapter2}
+	\include{Chapter3}
+	\include{Chapter4}
+	\include{Chapter5}
+	\include{Chapter6}
+	\include{Chapter7}
+	\include{Chapter8}
+	\include{Chapter9}
+	\include{Chapter10}
+	\include{Chapter11}
+	\include{Chapter12}
+	\include{Chapter13}
+	\include{Chapter14}
+\end{document}
